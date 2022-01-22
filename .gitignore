@@ -1,0 +1,6 @@
+# Editors
+.vscode/
+.idea/
+
+# Dependendcies
+node_modules/
