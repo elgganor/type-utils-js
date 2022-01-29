@@ -6,7 +6,6 @@ const isObject = require('./object');
 const isDate = require('./date');
 const isFunction = require('./function');
 const isNull = require('./null');
-const type = require('./type');
 
 module.exports = exports = {
     isUndefined,
@@ -16,6 +15,5 @@ module.exports = exports = {
     isObject,
     isDate,
     isFunction,
-    isNull,
-    type
+    isNull
 };

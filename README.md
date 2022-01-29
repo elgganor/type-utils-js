@@ -1,15 +1,18 @@
 
 # type-package
 
-Type-package is an npm package providing type checking helpers for javascript.
-
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
-![AppVeyor tests](https://img.shields.io/appveyor/tests/mrouabeh/type-package)
+Type-package is a npm package providing type checking helpers for javascript.
 
 ## Table Of Content
 
-* [Installation](#)
-* [Running Tests](#)
+* [Installation](#installation)
+* [Usage](#usageexamples)
+* [Running Tests](#running-tests)
+* [Authors](#authors)
+* [License](#license)
+* [Tech Stack](#tech-stack)
+* [Support](#support)
+* [Feedback](#feedback)
 
 ## Installation
 
@@ -18,6 +21,7 @@ Install with npm
 ```bash
   npm install @elgganor/type
 ```
+
 
 ## Usage/Examples
 
@@ -63,38 +67,41 @@ isUndefined(undefined); // -> true
 
 ### isObject
 ```javascript
-const { isString } = require('@elgganor/type');
+const { isObject } = require('@elgganor/type');
 
-isString('Hello World'); // -> true
-isString(123); // -> false
+isObject({ foo: true }); // -> true
+isObject(new Object()); // -> true
 ```
 
 
 ### isFunction
 ```javascript
-const { isString } = require('@elgganor/type');
+const { isFunction } = require('@elgganor/type');
 
-isString('Hello World'); // -> true
-isString(123); // -> false
+isFunction(() => { console.log('Function'); }); // -> true
 ```
 
 
 ### isArray
 ```javascript
-const { isString } = require('@elgganor/type');
+const { isArray } = require('@elgganor/type');
 
-isString('Hello World'); // -> true
-isString(123); // -> false
+isArray(['foo', 'bar', 'baz']); // -> true
+isArray(Array('foo', 'bar', 'baz')); // -> true
+isArray(Array(6)); // -> true
 ```
 
 
 ### isDate
 ```javascript
-const { isString } = require('@elgganor/type');
+const { isDate } = require('@elgganor/type');
 
-isString('Hello World'); // -> true
-isString(123); // -> false
+isDate(new Date()); // -> true
+isDate(new Date('10/01/2022')); // -> true
+isDate(new Date(2022, 2, 29)); // -> true
 ```
+
+
 ## Running Tests
 
 To run tests, run the following command
@@ -123,7 +130,7 @@ To run tests, run the following command
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](LICENSE.md)
 
 
 ## Tech Stack
