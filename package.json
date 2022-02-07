@@ -1,5 +1,5 @@
 {
-    "name": "@elgganor/type-utils",
+    "name": "type-utils-js",
     "version": "1.0.0",
     "description": "Type checking package",
     "main": "src/index.js",

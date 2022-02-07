@@ -1,11 +1,11 @@
 
-# @elgganor/type-utils
+# type-utils-js
 
-Type-utils is an npm package providing type checking helpers for javascript.
+Type-utils-js is an npm package providing type checking helpers for javascript.
 
 ## Table Of Content
 
-- [@elgganor/type-utils](#elgganortype-utils)
+- [type-utils-js](#type-utils-js)
   - [Table Of Content](#table-of-content)
   - [Installation](#installation)
   - [Usage/Examples](#usageexamples)
@@ -30,7 +30,7 @@ Type-utils is an npm package providing type checking helpers for javascript.
 Install with npm
 
 ```bash
-  npm install @elgganor/type-utils
+  npm install type-utils-js
 ```
 
 
@@ -38,7 +38,7 @@ Install with npm
 
 ### isString
 ```javascript
-const { isString } = require('@elgganor/type-utils');
+const { isString } = require('type-utils-js');
 
 isString('Hello World'); // -> true
 isString(String('Hello World')); // -> true
@@ -46,7 +46,7 @@ isString(String('Hello World')); // -> true
 
 ### isNumber
 ```javascript
-const { isNumber } = require('@elgganor/type-utils');
+const { isNumber } = require('type-utils-js');
 
 isNumber(123); // -> true
 isNumber(Number(123)); // -> true
@@ -54,7 +54,7 @@ isNumber(Number(123)); // -> true
 
 ### isBoolean
 ```javascript
-const { isBoolean } = require('@elgganor/type-utils');
+const { isBoolean } = require('type-utils-js');
 
 isBoolean(true); // -> true
 isBoolean(Boolean(1)); // -> true
@@ -62,7 +62,7 @@ isBoolean(Boolean(1)); // -> true
 
 ### isNull
 ```javascript
-const { isNull } = require('@elgganor/type-utils');
+const { isNull } = require('type-utils-js');
 
 isNull(null); // -> true
 ```
@@ -70,7 +70,7 @@ isNull(null); // -> true
 
 ### isUndefined
 ```javascript
-const { isUndefined } = require('@elgganor/type-utils');
+const { isUndefined } = require('type-utils-js');
 
 isUndefined(undefined); // -> true
 ```
@@ -78,7 +78,7 @@ isUndefined(undefined); // -> true
 
 ### isObject
 ```javascript
-const { isObject } = require('@elgganor/type-utils');
+const { isObject } = require('type-utils-js');
 
 isObject({ foo: true }); // -> true
 isObject(new Object()); // -> true
@@ -87,7 +87,7 @@ isObject(new Object()); // -> true
 
 ### isFunction
 ```javascript
-const { isFunction } = require('@elgganor/type-utils');
+const { isFunction } = require('type-utils-js');
 
 isFunction(() => { console.log('Function'); }); // -> true
 ```
@@ -95,7 +95,7 @@ isFunction(() => { console.log('Function'); }); // -> true
 
 ### isArray
 ```javascript
-const { isArray } = require('@elgganor/type-utils');
+const { isArray } = require('type-utils-js');
 
 isArray(['foo', 'bar', 'baz']); // -> true
 isArray(Array('foo', 'bar', 'baz')); // -> true
@@ -105,7 +105,7 @@ isArray(Array(6)); // -> true
 
 ### isDate
 ```javascript
-const { isDate } = require('@elgganor/type-utils');
+const { isDate } = require('type-utils-js');
 
 isDate(new Date()); // -> true
 isDate(new Date('10/01/2022')); // -> true
