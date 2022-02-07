@@ -1,5 +1,5 @@
 {
-    "name": "@elgganor/type",
+    "name": "type-helpers",
     "version": "1.0.0",
     "description": "Type checking package",
     "main": "src/index.js",
