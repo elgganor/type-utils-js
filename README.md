@@ -1,11 +1,11 @@
 
-# type-helpers
+# type-utils
 
-Type-helpers is an npm package providing type checking helpers for javascript.
+Type-utils is an npm package providing type checking helpers for javascript.
 
 ## Table Of Content
 
-- [type-helpers](#type-helpers)
+- [type-utils](#type-utils)
   - [Table Of Content](#table-of-content)
   - [Installation](#installation)
   - [Usage/Examples](#usageexamples)
@@ -30,7 +30,7 @@ Type-helpers is an npm package providing type checking helpers for javascript.
 Install with npm
 
 ```bash
-  npm install type-helpers
+  npm install type-utils
 ```
 
 
@@ -38,7 +38,7 @@ Install with npm
 
 ### isString
 ```javascript
-const { isString } = require('type-helpers');
+const { isString } = require('type-utils');
 
 isString('Hello World'); // -> true
 isString(String('Hello World')); // -> true
@@ -46,7 +46,7 @@ isString(String('Hello World')); // -> true
 
 ### isNumber
 ```javascript
-const { isNumber } = require('type-helpers');
+const { isNumber } = require('type-utils');
 
 isNumber(123); // -> true
 isNumber(Number(123)); // -> true
@@ -54,7 +54,7 @@ isNumber(Number(123)); // -> true
 
 ### isBoolean
 ```javascript
-const { isBoolean } = require('type-helpers');
+const { isBoolean } = require('type-utils');
 
 isBoolean(true); // -> true
 isBoolean(Boolean(1)); // -> true
@@ -62,7 +62,7 @@ isBoolean(Boolean(1)); // -> true
 
 ### isNull
 ```javascript
-const { isNull } = require('type-helpers');
+const { isNull } = require('type-utils');
 
 isNull(null); // -> true
 ```
@@ -70,7 +70,7 @@ isNull(null); // -> true
 
 ### isUndefined
 ```javascript
-const { isUndefined } = require('type-helpers');
+const { isUndefined } = require('type-utils');
 
 isUndefined(undefined); // -> true
 ```
@@ -78,7 +78,7 @@ isUndefined(undefined); // -> true
 
 ### isObject
 ```javascript
-const { isObject } = require('type-helpers');
+const { isObject } = require('type-utils');
 
 isObject({ foo: true }); // -> true
 isObject(new Object()); // -> true
@@ -87,7 +87,7 @@ isObject(new Object()); // -> true
 
 ### isFunction
 ```javascript
-const { isFunction } = require('type-helpers');
+const { isFunction } = require('type-utils');
 
 isFunction(() => { console.log('Function'); }); // -> true
 ```
@@ -95,7 +95,7 @@ isFunction(() => { console.log('Function'); }); // -> true
 
 ### isArray
 ```javascript
-const { isArray } = require('type-helpers');
+const { isArray } = require('type-utils');
 
 isArray(['foo', 'bar', 'baz']); // -> true
 isArray(Array('foo', 'bar', 'baz')); // -> true
@@ -105,7 +105,7 @@ isArray(Array(6)); // -> true
 
 ### isDate
 ```javascript
-const { isDate } = require('type-helpers');
+const { isDate } = require('type-utils');
 
 isDate(new Date()); // -> true
 isDate(new Date('10/01/2022')); // -> true
