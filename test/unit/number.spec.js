@@ -11,6 +11,11 @@ describe('isNumber', () => {
         expect(isNumber(Number(23))).to.be.true;
         expect(isNumber(Number(true))).to.be.true;
         expect(isNumber(Number(false))).to.be.true;
+
+        expect(isNumber(new Number('24'))).to.be.true;
+        expect(isNumber(new Number(23))).to.be.true;
+        expect(isNumber(new Number(true))).to.be.true;
+        expect(isNumber(new Number(false))).to.be.true;
     });
 
     it('should return false when value is not number type', () => {

@@ -12,6 +12,12 @@ describe('isString', () => {
         expect(isString(String(true))).to.be.true;
         expect(isString(String(false))).to.be.true;
         expect(isString(String({ a: 'foo' }))).to.be.true;
+
+        expect(isString(new String('24'))).to.be.true;
+        expect(isString(new String(23))).to.be.true;
+        expect(isString(new String(true))).to.be.true;
+        expect(isString(new String(false))).to.be.true;
+        expect(isString(new String({ a: 'foo' }))).to.be.true;
     });
 
     it('should return false when value is not string type', () => {

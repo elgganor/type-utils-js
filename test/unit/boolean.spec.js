@@ -12,6 +12,13 @@ describe('isBoolean', () => {
         expect(isBoolean(Boolean(1))).to.be.true;
         expect(isBoolean(Boolean('true'))).to.be.true;
         expect(isBoolean(Boolean('false'))).to.be.true;
+
+        expect(isBoolean(new Boolean(true))).to.be.true;
+        expect(isBoolean(new Boolean(false))).to.be.true;
+        expect(isBoolean(new Boolean(0))).to.be.true;
+        expect(isBoolean(new Boolean(1))).to.be.true;
+        expect(isBoolean(new Boolean('true'))).to.be.true;
+        expect(isBoolean(new Boolean('false'))).to.be.true;
     });
 
     it('should return false when value is not boolean type', () => {
